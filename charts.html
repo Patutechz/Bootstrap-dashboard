@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Charts | Material</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/Chart.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
+	<link rel="stylesheet" type="text/css" href="css/custom_style.css">
+  </head>
+<body style="background-color : #507dd7" >
+
+  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand mt-text-blue" href="#" style="font-size: 24px; font-weight: 500">
+        <span class="fas fa-globe"></span>
+      </a>
+        <button class="navbar-toggler  border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left Side Of Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mr-2">
+                <a class="nav-link" style="font-size: 1.125rem; font-weight: 500" href="./index.html">Dashboard</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" style="font-size: 1.125rem; font-weight: 500" href="./tables.html">Tables</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" style="color: #507dd7; font-size: 1.125rem; font-weight: 500" href="./charts.html">Charts</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" style="font-size: 1.125rem; font-weight: 500" href="./forms.html">Forms</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" style="font-size: 1.125rem; font-weight: 500" href="./login.html">Login</a>
+              </li>
+            </ul>
+
+            <!-- Right Side Of Navbar -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Authentication Links -->
+                <li class="nav-item dropdown">
+                  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <img src="avatar-11.jpg" alt="avatar" width="40" height="40"  class="rounded-circle shadow-sm"/>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right rounded-lg" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Profile</a>
+					<a class="dropdown-item" href="#">Logout</a>
+                  </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+  </nav>
+
+  <main>
+    <section class="py-3 bg-white shadow-sm d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h5 style="font-size : 20px; font-weight: 500;">Dashboard</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+            <!-- Card Chart -->
+    <section class="py-2 mt-4">
+      <div class="container">
+	  
+		        <div class="row">
+          <div class="col-12 col-xl-8 mb-2 mb-xl-0 px-3">
+            <div class="card mb-4 w-100 shadow bg-white border-0">
+              <div class="rounded-top mb-0 px-3 py-3 bg-transparent">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="position-relative w-100 mw-100 flex-grow-1 flex-1" style="flex: 1 1 0%;">
+                    <h2 class="text-secondary" style="font-size: 16px; font-weight: 600;">
+                      Bar Chart
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3" style="flex: 1 1 auto;">
+                <!-- Chart -->
+                <div class="position-relative" style="height: 250px;">
+                  <canvas id="bar-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-4 mb-2 mb-xl-0 px-3">
+            <div class="card mb-4 w-100 shadow bg-white border-0">
+              <div class="rounded-top mb-0 px-3 py-3 bg-transparent">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="position-relative w-100 mw-100 flex-grow-1 flex-1" style="flex: 1 1 0%;">
+                    <h2 class="text-secondary" style="font-size: 16px; font-weight: 600;">
+                      Pie Chart
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3" style="flex: 1 1 auto;">
+                <!-- Chart -->
+                <div class="position-relative" style="height: 250px;">
+                  <canvas id="pie-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	  
+        <div class="row">
+          <div class="col-12 col-xl-8 mb-2 mb-xl-0 px-3">
+            <div class="card mb-4 w-100 shadow bg-white border-0">
+              <div class="rounded-top mb-0 px-3 py-3 bg-transparent">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="position-relative w-100 mw-100 flex-grow-1 flex-1" style="flex: 1 1 0%;">
+                    <h2 class="text-secondary" style="font-size: 16px; font-weight: 600;">
+                      Line Chart
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3" style="flex: 1 1 auto;">
+                <!-- Chart -->
+                <div class="position-relative" style="height: 250px;">
+                  <canvas id="line-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-4 mb-2 mb-xl-0 px-3">
+            <div class="card mb-4 w-100 shadow bg-white border-0">
+              <div class="rounded-top mb-0 px-3 py-3 bg-transparent">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="position-relative w-100 mw-100 flex-grow-1 flex-1" style="flex: 1 1 0%;">
+                    <h2 class="text-secondary" style="font-size: 16px; font-weight: 600;">
+                      Doughnut Chart
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3" style="flex: 1 1 auto;">
+                <!-- Chart -->
+                <div class="position-relative" style="height: 250px;">
+                  <canvas id="doughnut-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    
+  </main>
+  
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/sweetalert2.min.js"></script>
+<script src="js/custom_script.js"></script>
+</body>
+</html>

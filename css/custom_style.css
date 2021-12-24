@@ -1,0 +1,44 @@
+.btn-primary{
+    color : white;
+    background-color: #507dd7;
+    border-color: #507dd7;
+}
+
+.btn-primary:hover{
+    color : white;
+    background-color: #03369e;
+    border-color: #03369e;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: #03369e;
+    border-color: #03369e;
+    box-shadow: 0 0 0 0.2rem rgba(3, 54, 158, 0.5);
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #507dd7;
+    border-width: 1px;
+}
+
+.form-control{
+    background-color: #F0F0F0;
+    border-width: none;
+}
+
+.form-group label{
+    color : #343a40;
+    font-weight: 500;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before{
+    color: #fff;
+    border-color: #507dd7;
+    background-color: #507dd7;
+}
+
+.mt-text-blue{
+    color : #507dd7 !important;
+}

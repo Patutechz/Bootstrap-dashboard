@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard | Material</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/Chart.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
+	<link rel="stylesheet" type="text/css" href="css/custom_style.css">
+  </head>
+<body style="background-color : #507dd7" >
+
+  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand mt-text-blue" href="#" style="font-size: 24px; font-weight: 500">
+        <span class="fas fa-globe"></span>
+      </a>
+        <button class="navbar-toggler  border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left Side Of Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mr-2">
+                <a class="nav-link" style="color: #507dd7; font-size: 18px; font-weight: 500" href="./index.html">Dashboard</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link text" style="font-size: 18px; font-weight: 500" href="./tables.html">Tables</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" style="font-size: 18px; font-weight: 500" href="./charts.html">Charts</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" style="font-size: 18px; font-weight: 500" href="./forms.html">Forms</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" style="font-size: 18px; font-weight: 500" href="./login.html">Login</a>
+              </li>
+            </ul>
+
+            <!-- Right Side Of Navbar -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Authentication Links -->
+                <li class="nav-item dropdown">
+                  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <img src="avatar-11.jpg" alt="avatar" width="40" height="40"  class="rounded-circle shadow-sm"/>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right rounded-lg" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Profile</a>
+					<a class="dropdown-item" href="#">Logout</a>
+                  </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+  </nav>
+
+  <main>
+    <section class="py-3 bg-white shadow-sm d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h5 style="font-size : 20px; font-weight: 500;">Dashboard</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Card stats -->
+        <section class="py-2 mt-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6 col-xl-3 px-3">
+                <div class="card mb-4 mb-xl-0 border-0 shadow">
+                  <div class="card-body">
+                    <div class="d-flex flex-wrap justify-content-between">
+                      <div class="position-relative w-100 pr-3 mw-100 flex-grow-1" style="flex: 1 1 0%;">
+                        <h1
+                          class="text-center align-items-center justify-content-center fas fa-signal "
+                          style="color : #507dd7; padding: 0.75rem; width: 3rem; height: 3rem; font-size: 30px; font-weight: 700;"
+                        >
+                          
+                      </h1>
+                      </div>
+                      <div class="position-relative pl-3" style=" width: auto; flex: 0 1 auto;">
+                        <h5 class="text-secondary text-uppercase text-right" style="font-weight: 500; font-size: 14px;">
+                          Sales
+                        </h5>
+                        <span class="text-dark text-right" style="font-weight: 700; font-size: 24px;">
+                          70,000
+                        </span>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 col-xl-3 px-3">
+                <div class="card mb-4 mb-lg-0 border-0 shadow">
+                  <div class="card-body">
+                    <div class="d-flex flex-wrap justify-content-between">
+                      <div class="position-relative w-100 pr-3 mw-100 flex-grow-1" style="flex: 1 1 0%;">
+                        <h1
+                          class="text-center align-items-center justify-content-center fas fa-shopping-cart"
+                          style="color : #507dd7; padding: 0.75rem; width: 3rem; height: 3rem; font-size: 30px; font-weight: 700;"
+                        >
+                          
+                      </h1>
+                      </div>
+                      <div class=" position-relative pl-3 justify-content-end" style=" width: auto; flex: 0 1 auto;">
+                        <h5 class="text-secondary text-uppercase text-right" style="font-weight: 500; font-size: 14px;">
+                          Orders
+                        </h5>
+                        <span class="text-dark text-right" style="font-weight: 700; font-size: 24px;">
+                          102
+                        </span>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 col-xl-3 px-3">
+                <div class="card mb-4 mb-lg-0 border-0   shadow">
+                  <div class="card-body">
+                    <div class="d-flex flex-wrap justify-content-between">
+                      <div class="position-relative w-100 pr-3 mw-100 flex-grow-1" style="flex: 1 1 0%;">
+                        <h1
+                          class="text-center align-items-center justify-content-center fas fa-dollar-sign"
+                          style="color : #507dd7; padding: 0.75rem; width: 3rem; height: 3rem; font-size: 30px; font-weight: 700;"
+                        >
+                          
+                      </h1>
+                      </div>
+                      <div class=" position-relative pl-3" style=" width: auto; flex: 0 1 auto;">
+                        <h5 class="text-muted text-uppercase text-right" style="font-weight: 500; font-size: 14px;">
+                          Revenue
+                        </h5>
+                        <span class="text-dark text-right" style="font-weight: 700; font-size: 24px;">
+                          $20,000
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+				  <div hidden class="card-footer py-1 px-5 bg-light"><i class="fas fa-user text-dark mr-3"></i> View all</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 col-xl-3 px-3">
+                <div class="card mb-4 mb-lg-0 border-0   shadow">
+                  <div class="card-body">
+                    <div class="d-flex flex-wrap justify-content-between">
+                      <div class="position-relative w-100 pr-3 mw-100 flex-grow-1" style="flex: 1 1 0%;">
+                        <h1
+                          class="text-center align-items-center justify-content-center fas fa-users"
+                          style="color : #507dd7; padding: 0.75rem; width: 3rem; height: 3rem; font-size: 30px; font-weight: 700;"
+                        >
+                          
+                      </h1>
+                      </div>
+                      <div class=" position-relative pl-3" style=" width: auto; flex: 0 1 auto;">
+                        <h5 class="text-secondary text-uppercase text-right" style="font-weight: 500; font-size: 14px;">
+                          Customers
+                        </h5>
+                        <span class="text-dark text-right" style="font-weight: 700; font-size: 24px;">
+                          234+
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Card Stat ends -->
+
+            <!-- Card Chart -->
+    <section class="py-2 mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-8 mb-2 mb-xl-0 px-3">
+            <div class="card mb-4 w-100 shadow bg-white border-0">
+              <div class="rounded-top mb-0 px-3 py-3 bg-transparent">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="position-relative w-100 mw-100 flex-grow-1 flex-1" style="flex: 1 1 0%;">
+                    <h2 class="text-secondary" style="font-size: 16px; font-weight: 600;">
+                      Sales
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3" style="flex: 1 1 auto;">
+                <!-- Chart -->
+                <div class="position-relative" style="height: 250px;">
+                  <canvas id="line-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-4 mb-2 mb-xl-0 px-3">
+            <div class="card mb-4 w-100 shadow bg-white border-0">
+              <div class="rounded-top mb-0 px-3 py-3 bg-transparent">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="position-relative w-100 mw-100 flex-grow-1 flex-1" style="flex: 1 1 0%;">
+                    <h2 class="text-secondary" style="font-size: 16px; font-weight: 600;">
+                      Order Status
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3" style="flex: 1 1 auto;">
+                <!-- Chart -->
+                <div class="position-relative" style="height: 250px;">
+                  <canvas id="doughnut-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="py-2 mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-12 mb-2 mb-xl-0 px-3">
+            <div class="card mb-4 w-100 shadow border-0 bg-white">
+              <div class="rounded-top mb-0 px-3 py-2">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="position-relative w-100 px-1 pt-2 flex-grow-1" style="flex: 1 1 0%;">
+                    <h3 class="text-secondary" style="font-size: 16px; font-weight: 600;">
+                      Table
+                    </h3>
+                  </div>
+
+                </div>
+              </div>
+              <div class="table-responsive">
+                <table class="align-items-center w-100 bg-transparent" style="border-collapse: collapse;">
+                  <thead style="background-color: rgba(249, 250, 251, 1);">
+                    <tr>
+                      <th
+                        class="px-4 text-secondary border py-3  text-uppercase border-left-0 border-right-0 text-left"
+                        style="vertical-align: middle; border-width: 1px; border-color: #edf2f7; font-size: 12px; white-space: nowrap; font-weight: 600; letter-spacing: 0.05em;"
+                      >
+                        Employee Name
+                      </th>
+                      <th
+                        class="px-4 text-secondary border py-3  text-uppercase border-left-0 border-right-0 text-left"
+                        style="vertical-align: middle; border-width: 1px; border-color: #edf2f7; font-size: 12px; white-space: nowrap; font-weight: 600; letter-spacing: 0.05em;"
+                      >
+                        Salary
+                      </th>
+                      <th
+                        class="px-4 text-secondary border py-3  text-uppercase border-left-0 border-right-0 text-left"
+                        style="vertical-align: middle; border-width: 1px; border-color: #edf2f7; font-size: 12px; white-space: nowrap; font-weight: 600; letter-spacing: 0.05em;"
+                      >
+                        Status
+                      </th>
+                      <th
+                        class="px-4 text-secondary border py-3  text-uppercase border-left-0 border-right-0 text-left"
+                        style="vertical-align: middle; border-width: 1px; border-color: #edf2f7; font-size: 12px; white-space: nowrap; font-weight: 600; letter-spacing: 0.05em;"
+                      >
+                        Role
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3 text-left"
+                        style="vertical-align: middle; font-size: 12px; white-space: nowrap;"
+                      >
+                      <div class="d-flex align-items-center">
+                        <div style="flex-shrink: 0; width : 40px; height : 40px;">
+                          <img class="rounded-circle" style="width : 40px; height : 40px;"  src="avatar-11.jpg" alt="">
+                        </div>
+                        <div class="ml-3">
+                          <div class="text-dark" style="font-size: 14px; font-weight: 500;">
+                            John smith
+                          </div>
+                          <div class="text-secondary" style="font-size: 14px;">
+                            johnsmith@example.com
+                          </div>
+                        </div>
+                      </div>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; font-size: 12px; white-space: nowrap;"
+                      >
+                      <div class="d-flex align-items-center">
+                        <div class="">
+                          <div class="text-dark" style="font-size: 16px; font-weight: 500;">
+                            $50,000
+                          </div>
+                          <div class="text-secondary" style="font-size: 14px;">
+                            Kitchen
+                          </div>
+                        </div>
+                      </div>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; white-space: nowrap;"
+                      >
+                      <span class="px-2 d-inline-flex alert-success"
+                            style="font-size: 12px; line-height: 1.25rem; font-weight: 600; border-radius: 99rem;">
+                        Online
+                      </span>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; font-size: 14px; white-space: nowrap;"
+                      >
+                        Chef
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3 text-left"
+                        style="vertical-align: middle; font-size: 12px; white-space: nowrap;"
+                      >
+                      <div class="d-flex align-items-center">
+                        <div style="flex-shrink: 0; width : 40px; height : 40px;">
+                          <img class="rounded-circle" style="width : 40px; height : 40px;"  src="avatar-11.jpg" alt="">
+                        </div>
+                        <div class="ml-3">
+                          <div class="text-dark" style="font-size: 14px; font-weight: 500;">
+                            John smith
+                          </div>
+                          <div class="text-secondary" style="font-size: 14px;">
+                            johnsmith@example.com
+                          </div>
+                        </div>
+                      </div>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; font-size: 12px; white-space: nowrap;"
+                      >
+                      <div class="d-flex align-items-center">
+                        <div class="">
+                          <div class="text-dark" style="font-size: 16px; font-weight: 500;">
+                            $50,000
+                          </div>
+                          <div class="text-secondary" style="font-size: 14px;">
+                            Kitchen
+                          </div>
+                        </div>
+                      </div>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; white-space: nowrap;"
+                      >
+                      <span class="px-2 d-inline-flex alert-danger"
+                            style="font-size: 12px; line-height: 1.25rem; font-weight: 600; border-radius: 99rem;">
+                        Offline
+                      </span>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; font-size: 14px; white-space: nowrap;"
+                      >
+                        Chef
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3 text-left"
+                        style="vertical-align: middle; font-size: 12px; white-space: nowrap;"
+                      >
+                      <div class="d-flex align-items-center">
+                        <div style="flex-shrink: 0; width : 40px; height : 40px;">
+                          <img class="rounded-circle" style="width : 40px; height : 40px;"  src="avatar-11.jpg" alt="">
+                        </div>
+                        <div class="ml-3">
+                          <div class="text-dark" style="font-size: 14px; font-weight: 500;">
+                            John smith
+                          </div>
+                          <div class="text-secondary" style="font-size: 14px;">
+                            johnsmith@example.com
+                          </div>
+                        </div>
+                      </div>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; font-size: 12px; white-space: nowrap;"
+                      >
+                      <div class="d-flex align-items-center">
+                        <div class="">
+                          <div class="text-dark" style="font-size: 16px; font-weight: 500;">
+                            $50,000
+                          </div>
+                          <div class="text-secondary" style="font-size: 14px;">
+                            Kitchen
+                          </div>
+                        </div>
+                      </div>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; white-space: nowrap;"
+                      >
+                      <span class="px-2 d-inline-flex alert-warning"
+                            style="font-size: 12px; line-height: 1.25rem; font-weight: 600; border-radius: 99rem;">
+                        Away
+                      </span>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; font-size: 14px; white-space: nowrap;"
+                      >
+                        Chef
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3 text-left"
+                        style="vertical-align: middle; font-size: 12px; white-space: nowrap;"
+                      >
+                      <div class="d-flex align-items-center">
+                        <div style="flex-shrink: 0; width : 40px; height : 40px;">
+                          <img class="rounded-circle" style="width : 40px; height : 40px;"  src="avatar-11.jpg" alt="">
+                        </div>
+                        <div class="ml-3">
+                          <div class="text-dark" style="font-size: 14px; font-weight: 500;">
+                            John smith
+                          </div>
+                          <div class="text-secondary" style="font-size: 14px;">
+                            johnsmith@example.com
+                          </div>
+                        </div>
+                      </div>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; font-size: 12px; white-space: nowrap;"
+                      >
+                      <div class="d-flex align-items-center">
+                        <div class="">
+                          <div class="text-dark" style="font-size: 16px; font-weight: 500;">
+                            $50,000
+                          </div>
+                          <div class="text-secondary" style="font-size: 14px;">
+                            Kitchen
+                          </div>
+                        </div>
+                      </div>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; white-space: nowrap;"
+                      >
+                      <span class="px-2 d-inline-flex alert-success"
+                            style="font-size: 12px; line-height: 1.25rem; font-weight: 600; border-radius: 99rem;">
+                        Online
+                      </span>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; font-size: 14px; white-space: nowrap;"
+                      >
+                        Chef
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3 text-left"
+                        style="vertical-align: middle; font-size: 12px; white-space: nowrap;"
+                      >
+                      <div class="d-flex align-items-center">
+                        <div style="flex-shrink: 0; width : 40px; height : 40px;">
+                          <img class="rounded-circle" style="width : 40px; height : 40px;"  src="avatar-11.jpg" alt="">
+                        </div>
+                        <div class="ml-3">
+                          <div class="text-dark" style="font-size: 14px; font-weight: 500;">
+                            John smith
+                          </div>
+                          <div class="text-secondary" style="font-size: 14px;">
+                            johnsmith@example.com
+                          </div>
+                        </div>
+                      </div>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; font-size: 12px; white-space: nowrap;"
+                      >
+                      <div class="d-flex align-items-center">
+                        <div class="">
+                          <div class="text-dark" style="font-size: 16px; font-weight: 500;">
+                            $50,000
+                          </div>
+                          <div class="text-secondary" style="font-size: 14px;">
+                            Kitchen
+                          </div>
+                        </div>
+                      </div>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; white-space: nowrap;"
+                      >
+                      <span class="px-2 d-inline-flex alert-success"
+                            style="font-size: 12px; line-height: 1.25rem; font-weight: 600; border-radius: 99rem;">
+                        Online
+                      </span>
+                      </td>
+                      <td
+                        class="border-top-0 px-4 border-left-0 border-right-0 p-3"
+                        style="vertical-align: middle; font-size: 14px; white-space: nowrap;"
+                      >
+                        Chef
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/sweetalert2.min.js"></script>
+<script src="js/custom_script.js"></script>
+</body>
+</html>
